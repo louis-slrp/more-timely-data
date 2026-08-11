@@ -44,14 +44,22 @@
       </div>
     </div>
 
-    <p class="govuk-body">Your file name must follow the required format. (Format to be confirmed). This helps us identify and process your file correctly.  </p>
-    <p class="govuk-body">Before uploading your file ensure that:</p>
+    <p class="govuk-body">Before uploading your file, make sure that:</p>
     <ul class="govuk-list govuk-list--bullet">
-      <li>it's in CSV format </li>
-      <li>the file name follows the correct format  </li>
-      <li>the data it contains is as complete as possible</li>
-      <li>the data it contains is as accurate as possible</li>
+      <li>it is in CSV format</li>
+      <li>it is named FE/DD/MM/YYYY</li>
+      <li>the data is as complete as possible</li>
+      <li>the data is as accurate as possible</li>
+      <li>you submit your data once a week</li>
     </ul>
+
+ <div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+    Submitting another file in the same week will overwrite the data you previously submitted.
+  </strong>
+</div>
 
     {{ govukFileUpload({
       id: "wac-file",
@@ -67,6 +75,7 @@
       href: "/idea-2/data-validation"
     }) }}
 
+   
   </div>
 
   </div>
